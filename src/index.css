@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* FlexBook Custom Stitch Colors */
+  --color-surface: #fdf8f8;
+  --color-surface-dim: #ddd9d8;
+  --color-surface-bright: #fdf8f8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f7f2f2;
+  --color-surface-container: #f1edec;
+  --color-surface-container-high: #ece7e7;
+  --color-surface-container-highest: #e6e1e1;
+  --color-on-surface: #1c1b1b;
+  --color-on-surface-variant: #414750;
+  --color-inverse-surface: #313030;
+  --color-inverse-on-surface: #f4f0ef;
+  
+  --color-outline: #717781;
+  --color-outline-variant: #c1c7d2;
+  --color-surface-tint: #0361a3;
+  
+  --color-primary: #004b80;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0963a5;
+  --color-on-primary-container: #c5ddff;
+  --color-inverse-primary: #9ecaff;
+  
+  --color-secondary: #0061a5;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #4ba4fd;
+  --color-on-secondary-container: #003965;
+  
+  --color-tertiary: #723900;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #954d00;
+  --color-on-tertiary-container: #ffd3b4;
+  
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  
+  --color-primary-fixed: #d1e4ff;
+  --color-primary-fixed-dim: #9ecaff;
+  --color-on-primary-fixed: #001d36;
+  --color-on-primary-fixed-variant: #00497d;
+  
+  --color-secondary-fixed: #d2e4ff;
+  --color-secondary-fixed-dim: #a0caff;
+  --color-on-secondary-fixed: #001c37;
+  --color-on-secondary-fixed-variant: #00497e;
+  
+  --color-tertiary-fixed: #ffdcc4;
+  --color-tertiary-fixed-dim: #ffb781;
+  --color-on-tertiary-fixed: #2f1400;
+  --color-on-tertiary-fixed-variant: #6f3800;
+  
+  --color-background: #fdf8f8;
+  --color-on-background: #1c1b1b;
+  --color-surface-variant: #e6e1e1;
+
+  /* Fonts */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Typography Scale */
+  --font-headline-lg: "Inter", sans-serif;
+  --font-headline-md: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-section-label: "JetBrains Mono", monospace;
+  --font-technical-data: "JetBrains Mono", monospace;
+
+  /* Border Radius */
+  --radius-sm: 0.125rem;
+  --radius-DEFAULT: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* Spacing Scale */
+  --spacing-gutter: 24px;
+  --spacing-margin: 32px;
+  --spacing-container-max: 1280px;
+
+  /* Elevation Shadows */
+  --shadow-float-shadow: 0px 4px 12px rgba(28, 27, 27, 0.08);
+  --shadow-action-glow: 0 0 15px rgba(77, 166, 255, 0.4);
+}
+
+@utility bg-action-gradient {
+  background-image: linear-gradient(135deg, #0963a5 0%, #4da6ff 100%);
+}
+
+@utility shadow-action-glow {
+  box-shadow: var(--shadow-action-glow);
+}
+
+@utility float-shadow {
+  box-shadow: var(--shadow-float-shadow);
+}
+
+@utility technical-grid {
+  background-image: radial-gradient(#e2e2e6 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.blueprint-axis {
+  position: relative;
+}
+
+.blueprint-axis::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #e2e2e6;
+}
+
+/* Base Body Elements */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Text utilities */
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  color: #717781;
+}
+
+.mono-spec {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-outline);
+}
