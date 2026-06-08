@@ -33,7 +33,7 @@ export default function Navbar() {
             <Link to="/" className="font-headline-lg text-headline-lg font-extrabold text-primary tracking-tight">
               Flexo ERP
             </Link>
-            <span className="hidden sm:inline-block font-mono text-[10px] bg-primary/10 text-primary px-1.5 py-0.5 rounded uppercase font-medium">
+            <span className="hidden sm:inline-block font-mono text-[10px] bg-primary/10 text-primary px-1.5 py-0.5 rounded font-medium">
               v2.4.0
             </span>
           </div>

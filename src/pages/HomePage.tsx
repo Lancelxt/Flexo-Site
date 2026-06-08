@@ -11,6 +11,7 @@ export default function HomePage() {
     email: '',
     phone: '',
     details: '',
+    bottleneck: '',
   });
 
   // Handle smooth scroll from navigation redirect
@@ -35,7 +36,7 @@ export default function HomePage() {
     setTimeout(() => {
       setSubmitting(false);
       setFormSubmitted(true);
-      setFormData({ name: '', email: '', phone: '', details: '' });
+      setFormData({ name: '', email: '', phone: '', details: '', bottleneck: '' });
       setTimeout(() => {
         setFormSubmitted(false);
       }, 4000);
@@ -50,7 +51,7 @@ export default function HomePage() {
           
           {/* Hero Content */}
           <ScrollReveal>
-            <span className="section-label mb-4 block">PREMIUM B2B SaaS WORKSHOP PLATFORM</span>
+            <span className="section-label mb-4 block font-medium text-primary">Deal se Delivery tak</span>
             <h1 className="font-headline-lg text-4xl lg:text-5xl font-extrabold text-on-background mb-6 leading-tight tracking-tight">
               The Ultimate <br className="hidden lg:block"/>
               <span className="text-primary">Print ERP Software</span> <br/>
@@ -98,23 +99,17 @@ export default function HomePage() {
             {/* Visual Image Placeholder */}
             <div className="w-full aspect-[4/3] rounded-lg bg-surface-container-high border border-outline-variant flex flex-col items-center justify-center p-6 text-center float-shadow relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
-              <span className="material-symbols-outlined text-[64px] text-primary mb-4 animate-pulse">
-                dashboard
-              </span>
-              <h3 className="font-headline-md text-headline-md text-on-surface font-semibold mb-2">
-                Centralized Workshop Controls
-              </h3>
-              <p className="text-body-md text-on-surface-variant max-w-sm">
-                Unified live job monitoring dashboard mapping sales volume, active design approvals, and QC checkpoints.
-              </p>
+              <div className="relative w-full h-full bg-white rounded-md border border-outline shadow-sm overflow-hidden flex items-center justify-center">
+                 <span className="text-on-surface-variant font-medium">ERP Dashboard Screenshot Placeholder</span>
+              </div>
             </div>
 
             {/* Pinned Stats Card */}
             <div className="absolute -bottom-6 -left-6 bg-white p-6 float-shadow border border-outline-variant rounded-md hidden lg:block">
-              <div className="section-label mb-2">PLATFORM_TELEMETRY</div>
-              <div className="font-mono text-technical-data text-primary font-medium">SHOPS: 142+ Workshops</div>
-              <div className="font-mono text-technical-data text-primary font-medium">JOBS_STAGE: 2.84M+ Sheets</div>
-              <div className="font-mono text-technical-data text-primary font-medium">QC_ACCURACY: 99.98%</div>
+              <div className="section-label mb-2">Platform Telemetry</div>
+              <div className="font-mono text-technical-data text-primary font-medium">Shops: 142+ Workshops</div>
+              <div className="font-mono text-technical-data text-primary font-medium">Jobs Stage: 2.84M+ Sheets</div>
+              <div className="font-mono text-technical-data text-primary font-medium">QC Accuracy: 99.98%</div>
             </div>
           </ScrollReveal>
         </div>
@@ -126,7 +121,7 @@ export default function HomePage() {
           
           <ScrollReveal className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div>
-              <span className="section-label">UNIFIED_WORKSHOP_SUITE</span>
+              <span className="section-label">Unified Workshop Suite</span>
               <h2 className="font-headline-lg text-3xl font-extrabold mt-2 text-on-surface">Print Shop Management Modules</h2>
             </div>
             <p className="font-body-md text-on-surface-variant max-w-md">
@@ -135,45 +130,77 @@ export default function HomePage() {
           </ScrollReveal>
 
           {/* Capabilities Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* Feature 1 */}
-            <ScrollReveal delayMs={100} className="bg-white p-8 border border-outline-variant float-shadow rounded-lg group hover:border-primary transition-all duration-200">
-              <span className="material-symbols-outlined text-primary text-4xl mb-6">description</span>
-              <h3 className="font-headline-md text-headline-md mb-2 font-bold text-on-surface">Automated Job Sheets</h3>
-              <div className="font-mono text-technical-data text-on-surface-variant/60 mb-4 font-medium">SPEC-EST-01</div>
-              <p className="font-body-md text-on-surface-variant">
-                Hydrate estimators, dimensions, and structural details automatically. Handles dual-unit feet/inches conversions instantly.
+            <ScrollReveal delayMs={100} className="bg-white p-8 border border-outline-variant float-shadow rounded-lg group hover:border-primary transition-all duration-200 flex flex-col">
+              <div className="w-full h-40 bg-surface-container-low rounded border border-outline-variant mb-6 flex items-center justify-center overflow-hidden relative">
+                 <span className="text-on-surface-variant/50 text-sm font-medium">Leads Kanban Screenshot</span>
+              </div>
+              <span className="material-symbols-outlined text-primary text-3xl mb-4">query_stats</span>
+              <h3 className="font-headline-md text-headline-md mb-2 font-bold text-on-surface">Print CRM &amp; Lead Pipeline</h3>
+              <p className="font-body-md text-on-surface-variant mt-auto">
+                Track leads from "New" to "Won" with customized pipelines for Retail, Corporate, Channel Partners, and Architects.
               </p>
             </ScrollReveal>
 
             {/* Feature 2 */}
-            <ScrollReveal delayMs={200} className="bg-white p-8 border border-outline-variant float-shadow rounded-lg group hover:border-primary transition-all duration-200">
-              <span className="material-symbols-outlined text-primary text-4xl mb-6">draw</span>
-              <h3 className="font-headline-md text-headline-md mb-2 font-bold text-on-surface">Design Pick Studio</h3>
-              <div className="font-mono text-technical-data text-on-surface-variant/60 mb-4 font-medium">SPEC-DS-02</div>
-              <p className="font-body-md text-on-surface-variant">
-                Open-pool system allows designers to self-assign jobs, manage multi-item uploads, and coordinate client approvals.
+            <ScrollReveal delayMs={200} className="bg-white p-8 border border-outline-variant float-shadow rounded-lg group hover:border-primary transition-all duration-200 flex flex-col">
+              <div className="w-full h-40 bg-surface-container-low rounded border border-outline-variant mb-6 flex items-center justify-center overflow-hidden relative">
+                 <span className="text-on-surface-variant/50 text-sm font-medium">Job Sheet Creation Screenshot</span>
+              </div>
+              <span className="material-symbols-outlined text-primary text-3xl mb-4">description</span>
+              <h3 className="font-headline-md text-headline-md mb-2 font-bold text-on-surface">Smart Job Sheets</h3>
+              <p className="font-body-md text-on-surface-variant mt-auto">
+                Capture sizes (feet/inches) with auto-conversions, media types, lamination, and finishes with real-time cost estimation.
               </p>
             </ScrollReveal>
 
             {/* Feature 3 */}
-            <ScrollReveal delayMs={300} className="bg-white p-8 border border-outline-variant float-shadow rounded-lg group hover:border-primary transition-all duration-200">
-              <span className="material-symbols-outlined text-primary text-4xl mb-6">fact_check</span>
-              <h3 className="font-headline-md text-headline-md mb-2 font-bold text-on-surface">Floor QC checklists</h3>
-              <div className="font-mono text-technical-data text-on-surface-variant/60 mb-4 font-medium">SPEC-PROD-03</div>
-              <p className="font-body-md text-on-surface-variant">
-                Guided checklists for print and fabrication operators. Includes photo proof uploads and automated delivery challan logs.
+            <ScrollReveal delayMs={300} className="bg-white p-8 border border-outline-variant float-shadow rounded-lg group hover:border-primary transition-all duration-200 flex flex-col">
+              <div className="w-full h-40 bg-surface-container-low rounded border border-outline-variant mb-6 flex items-center justify-center overflow-hidden relative">
+                 <span className="text-on-surface-variant/50 text-sm font-medium">Client OTP Portal Screenshot</span>
+              </div>
+              <span className="material-symbols-outlined text-primary text-3xl mb-4">verified_user</span>
+              <h3 className="font-headline-md text-headline-md mb-2 font-bold text-on-surface">Client OTP Approvals</h3>
+              <p className="font-body-md text-on-surface-variant mt-auto">
+                Eliminate design friction. Send secure links for clients to review and approve designs instantly via OTP.
               </p>
             </ScrollReveal>
 
             {/* Feature 4 */}
-            <ScrollReveal delayMs={400} className="bg-white p-8 border border-outline-variant float-shadow rounded-lg group hover:border-primary transition-all duration-200">
-              <span className="material-symbols-outlined text-primary text-4xl mb-6">quick_phrases</span>
-              <h3 className="font-headline-md text-headline-md mb-2 font-bold text-on-surface">WhatsApp Remittance</h3>
-              <div className="font-mono text-technical-data text-on-surface-variant/60 mb-4 font-medium">SPEC-REM-04</div>
-              <p className="font-body-md text-on-surface-variant">
-                Dispatch automated billing invoices via WhatsApp with integrated 1-click UPI deep links for instant remittance.
+            <ScrollReveal delayMs={400} className="bg-white p-8 border border-outline-variant float-shadow rounded-lg group hover:border-primary transition-all duration-200 flex flex-col">
+              <div className="w-full h-40 bg-surface-container-low rounded border border-outline-variant mb-6 flex items-center justify-center overflow-hidden relative">
+                 <span className="text-on-surface-variant/50 text-sm font-medium">QC Checklists Screenshot</span>
+              </div>
+              <span className="material-symbols-outlined text-primary text-3xl mb-4">fact_check</span>
+              <h3 className="font-headline-md text-headline-md mb-2 font-bold text-on-surface">Floor QC Checklists</h3>
+              <p className="font-body-md text-on-surface-variant mt-auto">
+                Live status updates for Printing and Fabrication stages. Operator checklists and photo proofs for Quality Control.
+              </p>
+            </ScrollReveal>
+
+            {/* Feature 5 */}
+            <ScrollReveal delayMs={500} className="bg-white p-8 border border-outline-variant float-shadow rounded-lg group hover:border-primary transition-all duration-200 flex flex-col">
+              <div className="w-full h-40 bg-surface-container-low rounded border border-outline-variant mb-6 flex items-center justify-center overflow-hidden relative">
+                 <span className="text-on-surface-variant/50 text-sm font-medium">Delivery Challan Screenshot</span>
+              </div>
+              <span className="material-symbols-outlined text-primary text-3xl mb-4">local_shipping</span>
+              <h3 className="font-headline-md text-headline-md mb-2 font-bold text-on-surface">Automated Delivery Challans</h3>
+              <p className="font-body-md text-on-surface-variant mt-auto">
+                One-click generation of professional delivery challans with surveyor assignments and dispatch tracking.
+              </p>
+            </ScrollReveal>
+
+            {/* Feature 6 */}
+            <ScrollReveal delayMs={600} className="bg-white p-8 border border-outline-variant float-shadow rounded-lg group hover:border-primary transition-all duration-200 flex flex-col">
+              <div className="w-full h-40 bg-surface-container-low rounded border border-outline-variant mb-6 flex items-center justify-center overflow-hidden relative">
+                 <span className="text-on-surface-variant/50 text-sm font-medium">WhatsApp Billing Screenshot</span>
+              </div>
+              <span className="material-symbols-outlined text-primary text-3xl mb-4">quick_phrases</span>
+              <h3 className="font-headline-md text-headline-md mb-2 font-bold text-on-surface">WhatsApp Billing &amp; UPI</h3>
+              <p className="font-body-md text-on-surface-variant mt-auto">
+                Integrated Razorpay and Zoho, instant UPI deep-links, advance tracking, and automated WhatsApp payment reminders.
               </p>
             </ScrollReveal>
 
@@ -190,21 +217,15 @@ export default function HomePage() {
             <ScrollReveal className="order-2 md:order-1">
               <div className="w-full aspect-[4/3] rounded-lg bg-surface-container-high border border-outline-variant flex flex-col items-center justify-center p-6 text-center float-shadow relative overflow-hidden group">
                 <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
-                <span className="material-symbols-outlined text-[64px] text-primary mb-4 animate-pulse">
-                  sync_alt
-                </span>
-                <h3 className="font-headline-md text-headline-md text-on-surface font-semibold mb-2">
-                  End-to-End Print Workflow
-                </h3>
-                <p className="text-body-md text-on-surface-variant max-w-sm">
-                  Connecting sales pipelines, design libraries, and physical print floors in one unified software stack.
-                </p>
+                <div className="relative w-full h-full bg-white rounded-md border border-outline shadow-sm overflow-hidden flex items-center justify-center">
+                   <span className="text-on-surface-variant font-medium">Workflow Diagram Placeholder</span>
+                </div>
               </div>
             </ScrollReveal>
 
             {/* Process Text */}
             <ScrollReveal delayMs={200} className="order-1 md:order-2">
-              <span className="section-label">PLATFORM_PROVISIONING</span>
+              <span className="section-label">Platform Provisioning</span>
               <h2 className="font-headline-lg text-3xl font-extrabold mt-4 mb-6 text-on-surface">Scale Your Workshop</h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">
                 Flexo standardizes internal operations for sign manufacturers and commercial printing companies. Configure your workshop in 3 simple phases.
@@ -215,24 +236,24 @@ export default function HomePage() {
                 <div className="flex items-start gap-4">
                   <span className="font-mono text-primary font-bold text-lg">01</span>
                   <div>
-                    <h4 className="font-bold text-on-surface">Provision Your Infrastructure</h4>
-                    <p className="text-body-md text-on-surface-variant">Map your hardware inventories (laser beds, flatbeds, solvent arrays) and configure staff role permissions.</p>
+                    <h4 className="font-bold text-on-surface">Capture &amp; Quote</h4>
+                    <p className="text-body-md text-on-surface-variant">Lead ingestion with customized pipelines and real-time cost estimation based on smart job sheet auto-conversions.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <span className="font-mono text-primary font-bold text-lg">02</span>
                   <div>
-                    <h4 className="font-bold text-on-surface">Collaborate &amp; Approve</h4>
-                    <p className="text-body-md text-on-surface-variant">Onboard estimators and designers. Allow client OTP portals to review blueprints and approve vectors instantly.</p>
+                    <h4 className="font-bold text-on-surface">Design &amp; Produce</h4>
+                    <p className="text-body-md text-on-surface-variant">Self-assign jobs in the Design Pick Studio, get frictionless client OTP approvals, and ensure quality with Floor QC checklists.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <span className="font-mono text-primary font-bold text-lg">03</span>
                   <div>
-                    <h4 className="font-bold text-on-surface">Automate Invoicing &amp; QC</h4>
-                    <p className="text-body-md text-on-surface-variant">Enforce photo checklists for quality verification, auto-generate delivery challans, and trigger UPI deep links.</p>
+                    <h4 className="font-bold text-on-surface">Deliver &amp; Collect</h4>
+                    <p className="text-body-md text-on-surface-variant">Generate delivery challans in one click and send automated WhatsApp payment reminders with UPI deep links.</p>
                   </div>
                 </div>
 
@@ -250,7 +271,7 @@ export default function HomePage() {
             
             {/* Form Column */}
             <div className="p-8 md:p-12 lg:w-1/2">
-              <span className="section-label">DEMO_INITIATION</span>
+              <span className="section-label">Demo Initiation</span>
               <h2 className="font-headline-lg text-3xl font-extrabold mt-4 mb-8 text-on-surface">Request a B2B Demo</h2>
               
               {formSubmitted ? (
@@ -299,6 +320,22 @@ export default function HomePage() {
                     />
                   </div>
                   <div className="space-y-2">
+                    <label className="font-body-md font-semibold text-on-surface block">What is your biggest bottleneck?</label>
+                    <select
+                      required
+                      value={formData.bottleneck}
+                      onChange={(e) => setFormData({ ...formData, bottleneck: e.target.value })}
+                      className="w-full bg-white border border-outline-variant rounded p-3 focus:ring-2 focus:ring-secondary-container focus:border-primary outline-none transition-all duration-100 text-on-surface"
+                    >
+                      <option value="" disabled>Select your main challenge...</option>
+                      <option value="sales">Sales &amp; Lead Tracking</option>
+                      <option value="design">Design Approvals &amp; Revisions</option>
+                      <option value="production">Production Floor QC &amp; Tracking</option>
+                      <option value="billing">Invoicing &amp; Payment Collection</option>
+                      <option value="other">Other / General Operations</option>
+                    </select>
+                  </div>
+                  <div className="space-y-2">
                     <label className="font-body-md font-semibold text-on-surface block">Workshop Machinery &amp; Staff Size</label>
                     <textarea
                       required
@@ -317,7 +354,7 @@ export default function HomePage() {
                     {submitting ? (
                       <>
                         <span className="material-symbols-outlined animate-spin text-[20px]">sync</span>
-                        PROCESSING DEMO TICKET...
+                        Processing Demo Ticket...
                       </>
                     ) : (
                       'Request Workshop Onboarding'
@@ -370,9 +407,9 @@ export default function HomePage() {
               </div>
 
               <div className="mt-12 z-10 pt-12 border-t border-white/10">
-                <div className="section-label text-white/60 mb-2">AVAILABILITY</div>
-                <div className="font-mono text-technical-data">MON-FRI: 08:00 - 20:00 IST</div>
-                <div className="font-mono text-technical-data">SAT: 09:00 - 15:00 IST</div>
+                <div className="section-label text-white/60 mb-2">Availability</div>
+                <div className="font-mono text-technical-data">Mon-Fri: 08:00 - 20:00 IST</div>
+                <div className="font-mono text-technical-data">Sat: 09:00 - 15:00 IST</div>
               </div>
 
             </div>

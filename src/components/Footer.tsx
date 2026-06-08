@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
         <div className="grid grid-cols-2 gap-8 w-full">
           <div>
-            <h4 className="section-label text-white/50 mb-6">COMPLIANCE</h4>
+            <h4 className="section-label text-white/50 mb-6">Compliance</h4>
             <ul className="space-y-4">
               <li>
                 <Link to="/privacy" className="font-body-md text-surface-variant hover:text-secondary-fixed-dim transition-colors">
@@ -87,7 +87,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="section-label text-white/50 mb-6">SUPPORT</h4>
+            <h4 className="section-label text-white/50 mb-6">Support</h4>
             <ul className="space-y-4">
               <li>
                 <Link to="/shipping" className="font-body-md text-surface-variant hover:text-secondary-fixed-dim transition-colors">

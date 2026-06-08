@@ -18,16 +18,16 @@ function TitleTracker() {
     // 1. Dynamic Title SEO Override
     switch (location.pathname) {
       case '/':
-        document.title = 'Flexo ERP | Print ERP & Sign Shop Management Software';
+        document.title = 'Flexo ERP | Signage & Print Shop Management Software | Print CRM';
         break;
       case '/privacy':
-        document.title = 'Privacy Policy | Multi-Tenant Data Security | Flexo ERP';
+        document.title = 'Privacy Policy | Data Security | Flexo ERP';
         break;
       case '/terms':
-        document.title = 'Terms and Conditions | Software Seat Licenses | Flexo ERP';
+        document.title = 'Terms and Conditions | Software Licenses | Flexo ERP';
         break;
       case '/refund':
-        document.title = 'Cancellation & Refund Policy | UPI Gateway Terms | Flexo ERP';
+        document.title = 'Cancellation & Refund Policy | Gateway Terms | Flexo ERP';
         break;
       case '/shipping':
         document.title = 'Digital Delivery & Service SLA Policy | Flexo ERP';
