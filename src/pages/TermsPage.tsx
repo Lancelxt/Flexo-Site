@@ -43,13 +43,13 @@ export default function TermsPage() {
       <header className="pt-16 pb-12 px-margin max-w-container-max mx-auto border-b border-outline-variant">
         <div className="mb-4">
           <span className="font-section-label text-section-label text-primary mb-2 block uppercase tracking-widest">
-            Document No. FX-2024-TC
+            Document No. FX-2026-TC
           </span>
           <h1 className="font-headline-lg text-4xl font-extrabold text-on-surface border-l-4 border-primary pl-6 py-2">
             Terms and Conditions
           </h1>
           <p className="font-technical-data text-technical-data text-on-surface-variant mt-4">
-            Last Updated: October 24, 2024 | Revision 4.1
+            Last Updated: May 26, 2026 | Revision 5.0
           </p>
         </div>
       </header>
@@ -106,7 +106,7 @@ export default function TermsPage() {
             <ScrollReveal>
               <section className="bg-surface-container-lowest p-8 rounded-lg float-shadow border border-outline-variant">
                 <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
-                  These Terms and Conditions govern your use of the FlexBook platform and services. By accessing our high-fidelity manufacturing software or commissioning industrial printing projects, you agree to adhere to the technical and legal standards outlined herein.
+                  These Terms and Conditions govern your use of the Flexo ERP platform and services. By accessing our high-fidelity workshop software, creating digital job sheets, or uploading client design files, you agree to adhere to the technical and legal standards outlined herein.
                 </p>
               </section>
             </ScrollReveal>
@@ -120,24 +120,24 @@ export default function TermsPage() {
                 </div>
                 <div className="bg-surface-container-lowest border border-outline-variant overflow-hidden rounded-lg">
                   <div className="bg-surface-container-low px-6 py-2 border-b border-outline-variant">
-                    <span className="font-section-label text-section-label text-on-surface-variant">SPECIFICATION: IP_PROTECTION_V2</span>
+                    <span className="font-section-label text-section-label text-on-surface-variant">SPECIFICATION: IP_PROTECTION_V3</span>
                   </div>
                   <div className="p-8 space-y-4">
                     <p className="font-body-md text-body-md text-on-surface-variant">
-                      All software, proprietary algorithms, printing press configurations, and UI designs featured on FlexBook are the exclusive property of FlexBook. This includes but is not limited to:
+                      All software proprietary algorithms, database structures, UI dashboard designs, and version updates featured on Flexo ERP are the exclusive property of Flexo ERP. This includes but is not limited to:
                     </p>
                     <ul className="space-y-3 font-body-md text-on-surface">
                       <li className="flex gap-3">
                         <span className="text-primary font-technical-data">[01]</span>
-                        <span>High-resolution vector assets and mechanical blueprints generated through our interface.</span>
+                        <span>The code bases, OTP auth flows, and layout frameworks generated through our SaaS application.</span>
                       </li>
                       <li className="flex gap-3">
                         <span className="text-primary font-technical-data">[02]</span>
-                        <span>The custom brand integrations and industrial visual tokens defining the brand identity.</span>
+                        <span>Multi-tenant database configuration protocols, row-level security structures, and custom API schemas.</span>
                       </li>
                       <li className="flex gap-3">
                         <span className="text-primary font-technical-data">[03]</span>
-                        <span>Proprietary ink-mixing ratios and substrate compatibility data models.</span>
+                        <span>Dual-unit size calculation metrics (feet/inches to inches parsing) and WhatsApp invoice transmission modules.</span>
                       </li>
                     </ul>
                   </div>
@@ -154,9 +154,9 @@ export default function TermsPage() {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   <div className="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg float-shadow">
-                    <h3 className="font-technical-data font-bold text-primary mb-4 uppercase">Security Protocols</h3>
+                    <h3 className="font-technical-data font-bold text-primary mb-4 uppercase">Security Credentials</h3>
                     <p className="font-body-md text-on-surface-variant mb-4">
-                      Users are responsible for maintaining the confidentiality of their industrial control credentials. Any unauthorized access resulting from negligent key management is the sole responsibility of the client.
+                      SaaS tenant administrators are responsible for defining staff permissions and protecting OTP credentials. Any unauthorized access resulting from negligent role-access allocations is the sole responsibility of the client.
                     </p>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#4da6ff]"></div>
@@ -166,11 +166,11 @@ export default function TermsPage() {
                   <div className="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg float-shadow">
                     <h3 className="font-technical-data font-bold text-primary mb-4 uppercase">Data Accuracy</h3>
                     <p className="font-body-md text-on-surface-variant mb-4">
-                      Clients must provide exact technical specifications for print runs. FlexBook is not liable for errors arising from incorrect dimension inputs or color profile mismatches provided by the user.
+                      Estimators must provide exact technical dimensions. Flexo ERP is not liable for manufacturing errors arising from incorrect size configurations or substrate settings entered on the platform.
                     </p>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#4da6ff]"></div>
-                      <span className="font-technical-data text-technical-data text-on-surface">Precision Required: ±0.01mm</span>
+                      <span className="font-technical-data text-technical-data text-on-surface">Precision Metric: Calibrated</span>
                     </div>
                   </div>
                 </div>
@@ -195,15 +195,15 @@ export default function TermsPage() {
                     <tbody className="font-technical-data text-technical-data">
                       <tr className="border-b border-outline-variant hover:bg-surface-container-low transition-colors">
                         <td className="px-6 py-4 text-on-surface font-semibold">Service Interruption</td>
-                        <td className="px-6 py-4 text-on-surface-variant">Limited to pro-rated service credit for planned maintenance windows.</td>
+                        <td className="px-6 py-4 text-on-surface-variant">Limited to pro-rated service credit for planned maintenance windows. Target SLA: 99.9% Uptime.</td>
                       </tr>
                       <tr className="border-b border-outline-variant hover:bg-surface-container-low transition-colors">
-                        <td className="px-6 py-4 text-on-surface font-semibold">Manufacturing Defects</td>
-                        <td className="px-6 py-4 text-on-surface-variant">Limited to replacement of affected units within 48 hours of delivery.</td>
+                        <td className="px-6 py-4 text-on-surface font-semibold">File Upload Loss</td>
+                        <td className="px-6 py-4 text-on-surface-variant">We assume no liability for vector designs or CAD blueprints beyond the active job sheet lifecycle.</td>
                       </tr>
                       <tr className="hover:bg-surface-container-low transition-colors">
-                        <td className="px-6 py-4 text-on-surface font-semibold">Data Loss</td>
-                        <td className="px-6 py-4 text-on-surface-variant">FlexBook assumes zero liability for archival data beyond 30 days.</td>
+                        <td className="px-6 py-4 text-on-surface font-semibold">Data Breach</td>
+                        <td className="px-6 py-4 text-on-surface-variant">Flexo ERP enforces Supabase Row-Level Security (RLS) to isolate database schemas between tenants.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -221,7 +221,7 @@ export default function TermsPage() {
                 <div className="relative bg-surface-container border border-outline-variant p-8 rounded-lg">
                   <div className="relative z-10">
                     <p className="font-body-md text-on-surface leading-relaxed max-w-2xl">
-                      These terms are governed by and construed in accordance with the laws of the State of Chhattisgarh, India. Any industrial disputes or arbitration proceedings shall be conducted exclusively in the judicial courts located in Ambikapur.
+                      These terms are governed by and construed in accordance with the laws of the State of Chhattisgarh, India. Any disputes or arbitration proceedings shall be conducted exclusively in the judicial courts located in Ambikapur.
                     </p>
                     <div className="mt-6 flex flex-wrap gap-4">
                       <div className="bg-surface-container-lowest px-4 py-2 border border-outline-variant rounded flex items-center gap-2">
@@ -243,7 +243,7 @@ export default function TermsPage() {
               <div className="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                 <div>
                   <h4 className="font-headline-md text-xl font-bold text-on-surface mb-1">Legal Inquiry?</h4>
-                  <p className="font-body-md text-on-surface-variant">Direct all contractual questions to ops@flexbooksystems.com</p>
+                  <p className="font-body-md text-on-surface-variant">Direct all SaaS contract questions to ops@flexbooksystems.com</p>
                 </div>
                 <div className="flex gap-3">
                   <a

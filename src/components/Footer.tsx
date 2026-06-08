@@ -11,12 +11,12 @@ export default function Footer() {
       <footer className="w-full py-margin bg-surface-container border-t border-outline-variant mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter px-margin max-w-container-max mx-auto">
           <div className="flex flex-col gap-6">
-            <span className="font-headline-md text-headline-md font-bold text-on-surface">FlexBook</span>
+            <span className="font-headline-md text-headline-md font-bold text-on-surface">Flexo ERP</span>
             <p className="font-body-md text-on-surface-variant max-w-md">
-              Engineered for reliability. Defining the future of industrial printing through precision and technical excellence.
+              The ultimate operating system for print manufacturers and signage companies. Connect sales leads, design approvals, QC checks, and automated WhatsApp billing.
             </p>
             <span className="font-technical-data text-technical-data text-on-surface-variant">
-              © 2024 FlexBook Industrial Printing. All rights reserved. Ambikapur.
+              © 2026 Flexo ERP Systems. All rights reserved. Ambikapur.
             </span>
           </div>
           <div className="flex flex-col md:items-end justify-between gap-8">
@@ -31,7 +31,7 @@ export default function Footer() {
                 Refund
               </Link>
               <Link to="/shipping" className={`font-section-label text-section-label hover:text-primary transition-all ${location.pathname === '/shipping' ? 'text-primary font-semibold underline' : 'text-on-surface-variant'}`}>
-                Shipping
+                SLA Policy
               </Link>
               <a href="mailto:ops@flexbooksystems.com" className="font-section-label text-section-label text-on-surface-variant hover:text-primary transition-all">
                 Contact
@@ -41,7 +41,7 @@ export default function Footer() {
               <a href="mailto:ops@flexbooksystems.com" className="w-10 h-10 rounded border border-outline-variant flex items-center justify-center hover:bg-surface-container-high cursor-pointer transition-colors text-on-surface">
                 <span className="material-symbols-outlined text-[20px]">mail</span>
               </a>
-              <a href="tel:+18005550199" className="w-10 h-10 rounded border border-outline-variant flex items-center justify-center hover:bg-surface-container-high cursor-pointer transition-colors text-on-surface">
+              <a href="tel:+91800FLEXBOOK" className="w-10 h-10 rounded border border-outline-variant flex items-center justify-center hover:bg-surface-container-high cursor-pointer transition-colors text-on-surface">
                 <span className="material-symbols-outlined text-[20px]">call</span>
               </a>
             </div>
@@ -56,13 +56,13 @@ export default function Footer() {
     <footer className="bg-inverse-surface text-inverse-on-surface py-16 mt-0">
       <div className="max-w-container-max mx-auto px-margin grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         <div className="space-y-6">
-          <div className="font-headline-md text-white mb-6 font-bold">FlexBook Industrial Systems</div>
+          <div className="font-headline-md text-white mb-6 font-bold">Flexo ERP Systems</div>
           <p className="text-surface-variant max-w-sm">
-            Registered Name: FlexBook Industrial Systems Pvt. Ltd. <br />
-            Providing elite engineering solutions for the global printing industry since 2012.
+            Registered Name: Flexo ERP Systems Pvt. Ltd. <br />
+            Modernizing the global printing and signage manufacturing industry through unified cloud ERP automation.
           </p>
           <div className="font-body-md text-surface-variant pt-2">
-            © 2024 FlexBook Industrial Systems. All rights reserved. Ambikapur.
+            © 2026 Flexo ERP Systems. All rights reserved. Ambikapur.
           </div>
         </div>
         <div className="grid grid-cols-2 gap-8 w-full">
@@ -91,7 +91,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <Link to="/shipping" className="font-body-md text-surface-variant hover:text-secondary-fixed-dim transition-colors">
-                  Shipping &amp; Delivery
+                  Service SLA Policy
                 </Link>
               </li>
               <li>

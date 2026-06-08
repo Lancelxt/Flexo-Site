@@ -44,30 +44,30 @@ export default function ShippingPage() {
         <div className="max-w-container-max mx-auto px-margin">
           <div className="flex flex-col md:flex-row gap-gutter items-start justify-between">
             <div className="flex-1">
-              <span className="font-section-label text-section-label text-primary mb-4 block">DOCUMENT ID: SHP-2024-FLX</span>
+              <span className="font-section-label text-section-label text-primary mb-4 block">DOCUMENT ID: SLA-2026-FLX</span>
               <h1 className="font-headline-lg text-4xl font-extrabold text-on-surface mb-6">
-                Shipping &amp; Delivery Policy
+                Digital Delivery &amp; SLA Policy
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-                FlexBook manages high-volume transport and logistical fulfillment for heavy industrial print items, custom signs, and delicate substrates. This document details our transit conditions and dispatch guidelines.
+                Flexo ERP provides instant provisioning for B2B multi-tenant cloud workspaces. This document details our service level agreements, digital vector assets storage, and technical response times.
               </p>
             </div>
             
             {/* Quick Summary Card */}
             <div className="w-full md:w-80 bg-white border border-outline-variant p-6 float-shadow mt-8 md:mt-0 rounded-lg">
-              <span className="font-section-label text-section-label mb-4 block text-primary font-bold">LOGISTICS SUMMARY</span>
+              <span className="font-section-label text-section-label mb-4 block text-primary font-bold">SLA SUMMARY</span>
               <ul className="space-y-4">
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-primary text-[20px]">local_shipping</span>
-                  <span className="font-technical-data text-technical-data text-on-surface">National &amp; Local Shipping</span>
+                  <span className="material-symbols-outlined text-primary text-[20px]">cloud_queue</span>
+                  <span className="font-technical-data text-technical-data text-on-surface">Instant SaaS Provisioning</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-primary text-[20px]">package_2</span>
-                  <span className="font-technical-data text-technical-data text-on-surface">Heavy Wood Crating</span>
+                  <span className="material-symbols-outlined text-primary text-[20px]">dns</span>
+                  <span className="font-technical-data text-technical-data text-on-surface">99.9% Application Uptime</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-primary text-[20px]">schedule</span>
-                  <span className="font-technical-data text-technical-data text-on-surface">3-7 Business Days Delivery</span>
+                  <span className="material-symbols-outlined text-primary text-[20px]">support_agent</span>
+                  <span className="font-technical-data text-technical-data text-on-surface">12-Hour Max Ticket SLA</span>
                 </li>
               </ul>
             </div>
@@ -88,7 +88,7 @@ export default function ShippingPage() {
                   activeSection === 'timeline' ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'
                 }`}
               >
-                01. TRANSIT TIMELINES
+                01. RESPONSE TIMELINES
               </button>
               <button
                 onClick={() => scrollTo('packaging')}
@@ -96,7 +96,7 @@ export default function ShippingPage() {
                   activeSection === 'packaging' ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'
                 }`}
               >
-                02. PROTECTIVE PACKAGING
+                02. DIGITAL ASSET INTEGRITY
               </button>
               <button
                 onClick={() => scrollTo('tracking')}
@@ -104,7 +104,7 @@ export default function ShippingPage() {
                   activeSection === 'tracking' ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'
                 }`}
               >
-                03. TRACKING PROTOCOLS
+                03. SERVICE METRICS
               </button>
               <button
                 onClick={() => scrollTo('liability')}
@@ -112,7 +112,7 @@ export default function ShippingPage() {
                   activeSection === 'liability' ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'
                 }`}
               >
-                04. TRANSIT LIABILITY
+                04. SYSTEM REDUNDANCY
               </button>
             </nav>
           </aside>
@@ -125,36 +125,36 @@ export default function ShippingPage() {
               <article id="timeline" className="bg-surface-container-lowest border border-outline-variant p-8 float-shadow rounded-lg scroll-mt-24">
                 <div className="flex items-center gap-2 mb-6">
                   <span className="font-section-label text-section-label bg-surface-container px-2 py-1 rounded">SEC_01</span>
-                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">Transit Timelines</h2>
+                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">Digital Provisioning &amp; Response SLA</h2>
                 </div>
                 <div className="space-y-6">
                   <p className="font-body-md text-on-surface-variant">
-                    All jobs are fabricated and packed at our Ambikapur facility. Production turnaround varies by item type, followed by standard shipping logistics:
+                    All tenant workspaces are provisioned instantly upon subscription check. Response SLAs for server infrastructure issues follow strict resolution timelines:
                   </p>
                   <div className="overflow-x-auto border border-outline-variant rounded-lg">
                     <table className="w-full text-left border-collapse">
                       <thead>
                         <tr className="bg-surface-container border-b border-outline-variant">
-                          <th className="p-4 font-section-label text-section-label">REGION</th>
-                          <th className="p-4 font-section-label text-section-label">TIMEFRAME</th>
-                          <th className="p-4 font-section-label text-section-label">MODE</th>
+                          <th className="p-4 font-section-label text-section-label">ISSUE SEVERITY</th>
+                          <th className="p-4 font-section-label text-section-label">RESOLUTION SLA</th>
+                          <th className="p-4 font-section-label text-section-label">SUPPORT TEAM</th>
                         </tr>
                       </thead>
                       <tbody className="font-technical-data text-technical-data">
                         <tr className="border-b border-outline-variant hover:bg-surface-container-low transition-colors">
-                          <td className="p-4 text-on-surface font-semibold">Local (Ambikapur)</td>
-                          <td className="p-4 text-on-surface-variant">1 - 2 Business Days</td>
-                          <td className="p-4 text-on-surface-variant">Direct FlexBook Fleet</td>
+                          <td className="p-4 text-on-surface font-semibold">Tier-1 Critical (Outage)</td>
+                          <td className="p-4 text-on-surface-variant">2 - 4 Hours</td>
+                          <td className="p-4 text-on-surface-variant">Active DevOps Alert Array</td>
                         </tr>
                         <tr className="border-b border-outline-variant hover:bg-surface-container-low transition-colors">
-                          <td className="p-4 text-on-surface font-semibold">Chhattisgarh (Regional)</td>
-                          <td className="p-4 text-on-surface-variant">2 - 4 Business Days</td>
-                          <td className="p-4 text-on-surface-variant">Express Freight Partners</td>
+                          <td className="p-4 text-on-surface font-semibold">Tier-2 Performance (Lag)</td>
+                          <td className="p-4 text-on-surface-variant">4 - 8 Hours</td>
+                          <td className="p-4 text-on-surface-variant">Systems Engineer Desk</td>
                         </tr>
                         <tr className="hover:bg-surface-container-low transition-colors">
-                          <td className="p-4 text-on-surface font-semibold">National (Domestic)</td>
-                          <td className="p-4 text-on-surface-variant">3 - 7 Business Days</td>
-                          <td className="p-4 text-on-surface-variant">Air/Surface Certified</td>
+                          <td className="p-4 text-on-surface font-semibold">Tier-3 General (Questions)</td>
+                          <td className="p-4 text-on-surface-variant">8 - 12 Hours</td>
+                          <td className="p-4 text-on-surface-variant">B2B Account Managers</td>
                         </tr>
                       </tbody>
                     </table>
@@ -163,76 +163,76 @@ export default function ShippingPage() {
               </article>
             </ScrollReveal>
 
-            {/* Section 02: Protective Packaging */}
+            {/* Section 02: Protective Packaging -> Digital Asset Integrity */}
             <ScrollReveal>
               <article id="packaging" className="bg-surface-container-lowest border border-outline-variant p-8 float-shadow rounded-lg scroll-mt-24">
                 <div className="flex items-center gap-2 mb-6">
                   <span className="font-section-label text-section-label bg-surface-container px-2 py-1 rounded">SEC_02</span>
-                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">Protective Packaging</h2>
+                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">Digital Assets &amp; CAD Integrity</h2>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="space-y-4 font-body-md text-on-surface-variant">
-                    <p>To preserve structural and visual integrity, print substrates undergo strict physical reinforcement protocols:</p>
+                    <p>To preserve custom vector uploads, design blueprints, and multi-tenant assets, we enforce cloud integrity standards:</p>
                     <ul className="space-y-2 list-none">
                       <li className="flex items-start gap-2">
                         <span className="material-symbols-outlined text-primary text-[18px]">verified</span>
-                        <span>Multi-layer moisture-proof bubble wrap layer.</span>
+                        <span>AES-256 encrypted design attachments storage.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="material-symbols-outlined text-primary text-[18px]">verified</span>
-                        <span>Reinforced high-density plastic edge defenders.</span>
+                        <span>Supabase Row-Level Security database schemas.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="material-symbols-outlined text-primary text-[18px]">verified</span>
-                        <span>Custom wood crating structures for heavy acrylic and signs.</span>
+                        <span>Multi-zone redundant cloud backup systems.</span>
                       </li>
                     </ul>
                   </div>
                   <div className="bg-surface-container-low p-6 rounded border border-outline-variant">
-                    <span className="font-section-label text-section-label text-outline mb-3 block">SHIPPING SECURITY NOTE</span>
+                    <span className="font-section-label text-section-label text-outline mb-3 block">CAD SECURITY DIRECTIVE</span>
                     <p className="font-technical-data text-technical-data italic text-on-surface-variant leading-relaxed">
-                      "Our dispatch array isolates metal, wood, and acrylic materials into distinct segments to prevent abrasion friction and impact damage during standard freight transport."
+                      "Flexo ERP isolates client assets into multi-tenant buckets. High-fidelity prints, CAD paths, and customer job vector data are protected from adjacent account visibility."
                     </p>
                   </div>
                 </div>
               </article>
             </ScrollReveal>
 
-            {/* Section 03: Tracking Protocols */}
+            {/* Section 03: Tracking Protocols -> Service Metrics */}
             <ScrollReveal>
               <article id="tracking" className="bg-surface-container-lowest border border-outline-variant p-8 float-shadow rounded-lg scroll-mt-24">
                 <div className="flex items-center gap-2 mb-6">
                   <span className="font-section-label text-section-label bg-surface-container px-2 py-1 rounded">SEC_03</span>
-                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">Tracking Protocols</h2>
+                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">Service Delivery Metrics</h2>
                 </div>
                 <div className="space-y-4 font-body-md text-on-surface-variant leading-relaxed">
                   <p>
-                    Upon dispatch from the Ambikapur facility, clients receive automated tracking coordinates via electronic mail and WhatsApp.
+                    Workspaces are provisioned immediately upon active subscription creation. Administrative login credentials and client OTP endpoints deliver instantly via automated secure email triggers.
                   </p>
                   <p>
-                    The tracking link offers a real-time layout showing coordinates, current transport status, and estimated delivery dates. For high-volume projects, a dedicated freight manager coordinates the physical placement.
+                    Our active telemetry systems track API speed and database index query performances. Real-time latency logs are maintained for all B2B sign-shop modules.
                   </p>
                 </div>
               </article>
             </ScrollReveal>
 
-            {/* Section 04: Transit Liability */}
+            {/* Section 04: Transit Liability -> System Redundancy */}
             <ScrollReveal>
               <article id="liability" className="bg-primary text-white p-8 float-shadow relative overflow-hidden rounded-lg scroll-mt-24 pb-12">
                 <div className="relative z-10">
                   <div className="flex items-center gap-2 mb-6">
                     <span className="font-section-label text-section-label bg-white/10 text-primary-fixed px-2 py-1 rounded">SEC_04</span>
-                    <h2 className="font-headline-md text-2xl font-bold">Transit Liability</h2>
+                    <h2 className="font-headline-md text-2xl font-bold">System Redundancy</h2>
                   </div>
                   <p className="font-body-md mb-8 opacity-90 max-w-2xl leading-relaxed">
-                    FlexBook maintains fully-insured transit coverage for all freight shipments. If transit damage occurs, report the issue within 24 hours of receiving the shipment at ops@flexbooksystems.com to initiate replacement.
+                    Flexo ERP operates redundant server instances across distinct geographical centers to guarantee maximum software availability. If database connection failures disrupt your workshop production floor, alert our team to activate immediate failovers.
                   </p>
                   <a
                     href="mailto:ops@flexbooksystems.com"
                     className="bg-surface-container-lowest text-primary font-semibold px-6 py-3 rounded flex items-center gap-3 hover:bg-white transition-all shadow-lg w-max cursor-pointer"
                   >
                     <span className="material-symbols-outlined text-[18px]">local_post_office</span>
-                    Report Delivery Issue
+                    Report System Outage
                   </a>
                 </div>
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary-container opacity-20 -rotate-45 translate-x-32 -translate-y-32"></div>

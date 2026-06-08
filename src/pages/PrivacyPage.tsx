@@ -48,14 +48,14 @@ export default function PrivacyPage() {
               Privacy Policy &amp; Data Protection Protocol
             </h1>
             <p className="text-on-surface-variant font-body-lg max-w-3xl">
-              This document outlines the precision standards for data handling at FlexBook. We apply the same level of accuracy to your information as we do to our mechanical printing tolerances.
+              This document outlines the precision standards for data handling at Flexo ERP. We apply the same level of security to your multi-tenant database as we do to internal software workflows.
             </p>
             <div className="flex flex-wrap items-center gap-4 mt-4">
               <div className="flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full">
-                <span className="font-technical-data text-technical-data text-on-surface-variant">Last Revision: 2024.11.14</span>
+                <span className="font-technical-data text-technical-data text-on-surface-variant">Last Revision: 2026.05.26</span>
               </div>
               <div className="flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full">
-                <span className="font-technical-data text-technical-data text-on-surface-variant">Protocol v.2.4.0</span>
+                <span className="font-technical-data text-technical-data text-on-surface-variant">Protocol v2.4.0</span>
               </div>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function PrivacyPage() {
                   </div>
                   <div className="p-6 space-y-6">
                     <p className="font-body-lg text-on-surface-variant">
-                      We collect information strictly required to facilitate industrial printing operations and client account management. This process is governed by the principle of data minimization.
+                      We collect information strictly required to facilitate multi-tenant Print ERP software workflows, lead management, and custom design approvals. This process is governed by the principle of data minimization.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="p-4 border border-outline-variant rounded bg-surface-container-lowest">
@@ -182,7 +182,7 @@ export default function PrivacyPage() {
                 </div>
                 <div className="space-y-6">
                   <p className="font-body-lg text-on-surface-variant">
-                    FlexBook utilizes processed data to maintain the integrity of our manufacturing supply chain and digital portals.
+                    Flexo ERP utilizes processed data to maintain the integrity of your multi-tenant workshop operations and client portals.
                   </p>
                   <div className="overflow-x-auto border border-outline-variant rounded-lg">
                     <table className="w-full text-left border-collapse">

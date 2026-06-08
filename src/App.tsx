@@ -10,30 +10,43 @@ import RefundPage from './pages/RefundPage';
 import ShippingPage from './pages/ShippingPage';
 import './App.css';
 
-// Route Title Tracker for clean and precise dynamic SEO tags
+// Route Title and Canonical URL Tracker for premium dynamic SEO tags
 function TitleTracker() {
   const location = useLocation();
 
   useEffect(() => {
+    // 1. Dynamic Title SEO Override
     switch (location.pathname) {
       case '/':
-        document.title = 'FlexBook | Industrial Grade Printing & Signage Solutions';
+        document.title = 'Flexo ERP | Print ERP & Sign Shop Management Software';
         break;
       case '/privacy':
-        document.title = 'Privacy Policy | FlexBook Industrial Printing';
+        document.title = 'Privacy Policy | Multi-Tenant Data Security | Flexo ERP';
         break;
       case '/terms':
-        document.title = 'Terms and Conditions | FlexBook Industrial Printing';
+        document.title = 'Terms and Conditions | Software Seat Licenses | Flexo ERP';
         break;
       case '/refund':
-        document.title = 'Cancellation & Refund Policy | FlexBook Industrial Printing';
+        document.title = 'Cancellation & Refund Policy | UPI Gateway Terms | Flexo ERP';
         break;
       case '/shipping':
-        document.title = 'Shipping & Delivery Policy | FlexBook Industrial Printing';
+        document.title = 'Digital Delivery & Service SLA Policy | Flexo ERP';
         break;
       default:
-        document.title = 'FlexBook | Industrial Grade Printing';
+        document.title = 'Flexo ERP | Print Shop Management Software';
     }
+
+    // 2. Dynamic Canonical URL Injection
+    const canonicalBase = 'https://flexoprinting.com';
+    const canonicalUrl = `${canonicalBase}${location.pathname === '/' ? '' : location.pathname}`;
+    
+    let link: HTMLLinkElement | null = document.querySelector('link[rel="canonical"]');
+    if (!link) {
+      link = document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      document.head.appendChild(link);
+    }
+    link.setAttribute('href', canonicalUrl);
   }, [location]);
 
   return null;

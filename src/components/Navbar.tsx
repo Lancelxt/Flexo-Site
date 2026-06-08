@@ -26,20 +26,24 @@ export default function Navbar() {
   return (
     <nav className="bg-surface dark:bg-surface-dim border-b border-outline-variant shadow-sm sticky top-0 z-50 h-16 w-full">
       <div className="flex justify-between items-center h-full px-margin max-w-container-max mx-auto">
-        
+
         {/* Brand Name */}
         <div className="flex items-center gap-8">
-          <Link to="/" className="font-headline-lg text-headline-lg font-extrabold text-primary tracking-tight">
-            FlexBook
-          </Link>
-          
+          <div className="flex items-center gap-2">
+            <Link to="/" className="font-headline-lg text-headline-lg font-extrabold text-primary tracking-tight">
+              Flexo ERP
+            </Link>
+            <span className="hidden sm:inline-block font-mono text-[10px] bg-primary/10 text-primary px-1.5 py-0.5 rounded uppercase font-medium">
+              v2.4.0
+            </span>
+          </div>
+
           {/* Desktop Nav Items */}
           <div className="hidden md:flex space-x-8 items-center">
             <button
               onClick={() => handleNavClick('about')}
-              className={`font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors cursor-pointer ${
-                !isPolicyPage ? 'font-semibold border-b-2 border-primary pb-0.5' : ''
-              }`}
+              className={`font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors cursor-pointer ${!isPolicyPage ? 'font-semibold border-b-2 border-primary pb-0.5' : ''
+                }`}
             >
               About
             </button>
@@ -47,7 +51,7 @@ export default function Navbar() {
               onClick={() => handleNavClick('services')}
               className="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors cursor-pointer"
             >
-              Services
+              Features
             </button>
             <button
               onClick={() => handleNavClick('contact')}
@@ -60,7 +64,7 @@ export default function Navbar() {
 
         {/* Right Nav Utilities */}
         <div className="flex items-center gap-4">
-          
+
           {/* Search box - strictly visible only on policy pages */}
           {isPolicyPage && (
             <div className="hidden sm:flex items-center bg-surface-container px-3 py-1.5 rounded-lg border border-outline-variant gap-2">
@@ -75,7 +79,7 @@ export default function Navbar() {
 
           {/* Client Login Button */}
           <a
-            href="https://app.flexoprinting.com" // Update to live Flexo ERP app URL
+            href="https://app.flexzy.in" // Update to live Flexo ERP app URL
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-block bg-primary-container text-on-primary-container px-6 py-2 rounded font-semibold text-body-md hover:opacity-90 active:scale-95 duration-100 action-glow text-center"
@@ -109,7 +113,7 @@ export default function Navbar() {
               onClick={() => handleNavClick('services')}
               className="text-left font-body-lg text-on-surface-variant hover:text-primary py-2 border-b border-outline-variant"
             >
-              Services
+              Features
             </button>
             <button
               onClick={() => handleNavClick('contact')}
@@ -118,7 +122,7 @@ export default function Navbar() {
               Contact
             </button>
             <a
-              href="https://app.flexoprinting.com"
+              href="https://app.flexzy.in"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary-container text-on-primary-container py-3 rounded font-semibold text-body-md text-center action-glow"

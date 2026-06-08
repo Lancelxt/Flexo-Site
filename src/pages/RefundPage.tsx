@@ -44,12 +44,12 @@ export default function RefundPage() {
         <div className="max-w-container-max mx-auto px-margin">
           <div className="flex flex-col md:flex-row gap-gutter items-start justify-between">
             <div className="flex-1">
-              <span className="font-section-label text-section-label text-primary mb-4 block">DOCUMENT ID: REF-2024-FLX</span>
+              <span className="font-section-label text-section-label text-primary mb-4 block">DOCUMENT ID: REF-2026-FLX</span>
               <h1 className="font-headline-lg text-4xl font-extrabold text-on-surface mb-6">
                 Cancellation &amp; Refund Policy
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-                At FlexBook, we prioritize precision and transparency. This policy outlines the procedural framework for order adjustments, cancellations, and financial reconciliations to ensure professional uptime for all clients.
+                At Flexo ERP, we prioritize precision and transparency. This policy outlines the procedural framework for SaaS subscription cancellations, software trial adjustments, and UPI gateway reconciliations to ensure professional uptime for all clients.
               </p>
             </div>
             
@@ -59,15 +59,15 @@ export default function RefundPage() {
               <ul className="space-y-4">
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-primary text-[20px]">timer</span>
-                  <span className="font-technical-data text-technical-data text-on-surface">24H Cancellation Window</span>
+                  <span className="font-technical-data text-technical-data text-on-surface">14-Day Free Software Trial</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-primary text-[20px]">verified</span>
-                  <span className="font-technical-data text-technical-data text-on-surface">100% Refund on Stock Items</span>
+                  <span className="font-technical-data text-technical-data text-on-surface">Cancel Subscription Anytime</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-primary text-[20px]">payments</span>
-                  <span className="font-technical-data text-technical-data text-on-surface">5-7 Day Processing Time</span>
+                  <span className="font-technical-data text-technical-data text-on-surface">24-48H UPI Settlement</span>
                 </li>
               </ul>
             </div>
@@ -88,7 +88,7 @@ export default function RefundPage() {
                   activeSection === 'window' ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'
                 }`}
               >
-                01. CANCELLATION WINDOW
+                01. SUBSCRIPTIONS
               </button>
               <button
                 onClick={() => scrollTo('custom')}
@@ -96,7 +96,7 @@ export default function RefundPage() {
                   activeSection === 'custom' ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'
                 }`}
               >
-                02. CUSTOM ORDERS
+                02. GATEWAY CHARGES
               </button>
               <button
                 onClick={() => scrollTo('timeline')}
@@ -104,7 +104,7 @@ export default function RefundPage() {
                   activeSection === 'timeline' ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'
                 }`}
               >
-                03. TIMELINES
+                03. RECONCILIATIONS
               </button>
               <button
                 onClick={() => scrollTo('dispute')}
@@ -112,7 +112,7 @@ export default function RefundPage() {
                   activeSection === 'dispute' ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'
                 }`}
               >
-                04. DISPUTE RESOLUTION
+                04. SUPPORT DESK
               </button>
             </nav>
           </aside>
@@ -125,14 +125,14 @@ export default function RefundPage() {
               <article id="window" className="bg-surface-container-lowest border border-outline-variant p-8 float-shadow rounded-lg scroll-mt-24">
                 <div className="flex items-center gap-2 mb-6">
                   <span className="font-section-label text-section-label bg-surface-container px-2 py-1 rounded">SEC_01</span>
-                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">Order Cancellation Window</h2>
+                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">SaaS Subscription &amp; Cancellations</h2>
                 </div>
                 <div className="space-y-4 font-body-md text-on-surface-variant leading-relaxed">
                   <p>
-                    Standard industrial equipment and consumable orders may be cancelled within <span className="font-technical-data text-on-surface font-bold">24 hours</span> of order confirmation without incurring any processing fees. All cancellation requests must be submitted via the Client Portal or via certified electronic mail to <span className="font-technical-data">ops@flexbooksystems.com</span>.
+                    Flexo ERP is provided on a multi-tenant cloud subscription basis. Tenants are provided a <span className="font-technical-data text-on-surface font-bold">14-Day Free Software Trial</span>. You may cancel your subscription trial or paid seats at any time via the billing console.
                   </p>
                   <p>
-                    Orders that have already entered the "Staged for Shipping" status are subject to a 15% restocking fee, even if cancelled within the initial 24-hour window.
+                    Once a monthly billing period initiates, cancellations will apply to the subsequent monthly cycle, ensuring access for the remainder of the currently active paid interval.
                   </p>
                 </div>
               </article>
@@ -143,30 +143,30 @@ export default function RefundPage() {
               <article id="custom" className="bg-surface-container-lowest border border-outline-variant p-8 float-shadow rounded-lg scroll-mt-24">
                 <div className="flex items-center gap-2 mb-6">
                   <span className="font-section-label text-section-label bg-surface-container px-2 py-1 rounded">SEC_02</span>
-                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">Custom Orders &amp; Technical Specs</h2>
+                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">UPI Gateway Fees &amp; Software Licenses</h2>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="space-y-4 font-body-md text-on-surface-variant">
-                    <p>For custom-machined parts and specific ink formulations, refund eligibility is strictly governed by the production stage:</p>
+                    <p>Refund eligibility on billing is strictly governed by the service stage:</p>
                     <ul className="space-y-2 list-none">
                       <li className="flex items-start gap-2">
                         <span className="material-symbols-outlined text-primary text-[18px]">arrow_forward</span>
-                        <span>Pre-Engineering: 100% Refund minus design setup fees.</span>
+                        <span>Active Trials: 100% Free, zero-setup software charges.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="material-symbols-outlined text-primary text-[18px]">arrow_forward</span>
-                        <span>In-Production: 30% Material recovery refund value.</span>
+                        <span>Monthly SaaS Seats: Cancel anytime, non-refundable once billed.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="material-symbols-outlined text-error text-[18px]">block</span>
-                        <span>Post-Production: Non-refundable due to raw material loss.</span>
+                        <span>UPI Gateway fees: Zero-fee transactions for standard UPI remittance.</span>
                       </li>
                     </ul>
                   </div>
                   <div className="bg-surface-container-low p-6 rounded border border-outline-variant">
-                    <span className="font-section-label text-section-label text-outline mb-3 block">ENGINEERING NOTE</span>
+                    <span className="font-section-label text-section-label text-outline mb-3 block">COMPLIANCE NOTE</span>
                     <p className="font-technical-data text-technical-data italic text-on-surface-variant leading-relaxed">
-                      "Custom signage and print orders involve non-reversible metallurgical cutting and chemical curing. Once fabrication begins, substrate integrity cannot be restored for alternate client applications."
+                      "Flexo ERP deep-links directly with merchant UPI gateways. We do not store or deduct transaction processing fees. All payment remittances settle directly from your client to your configured business bank account."
                     </p>
                   </div>
                 </div>
@@ -178,7 +178,7 @@ export default function RefundPage() {
               <article id="timeline" className="bg-surface-container-lowest border border-outline-variant p-8 float-shadow rounded-lg scroll-mt-24">
                 <div className="flex items-center gap-2 mb-6">
                   <span className="font-section-label text-section-label bg-surface-container px-2 py-1 rounded">SEC_03</span>
-                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">Processing Timelines</h2>
+                  <h2 className="font-headline-md text-2xl font-bold text-on-surface">Reconciliation Timelines</h2>
                 </div>
                 <div className="overflow-x-auto border border-outline-variant rounded-lg">
                   <table className="w-full text-left border-collapse">
@@ -191,27 +191,27 @@ export default function RefundPage() {
                     </thead>
                     <tbody className="font-technical-data text-technical-data">
                       <tr className="border-b border-outline-variant hover:bg-surface-container-low transition-colors">
-                        <td className="p-4 text-on-surface font-semibold">Refund Verification</td>
-                        <td className="p-4 text-on-surface-variant">24 - 48 Hours</td>
+                        <td className="p-4 text-on-surface font-semibold">Seat Adjustments</td>
+                        <td className="p-4 text-on-surface-variant">Immediate Action</td>
                         <td className="p-4 flex items-center gap-2 text-on-surface-variant">
                           <div className="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(77,166,255,0.6)]"></div>
-                          STG_VERIFY
+                          SYS_SEATS
                         </td>
                       </tr>
                       <tr className="border-b border-outline-variant hover:bg-surface-container-low transition-colors">
-                        <td className="p-4 text-on-surface font-semibold">Bank Reconciliation</td>
-                        <td className="p-4 text-on-surface-variant">3 - 5 Business Days</td>
+                        <td className="p-4 text-on-surface font-semibold">UPI Deep-Link Settlements</td>
+                        <td className="p-4 text-on-surface-variant">Instant / 24-48 Hours</td>
                         <td className="p-4 flex items-center gap-2 text-on-surface-variant">
                           <div className="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(77,166,255,0.6)]"></div>
-                          FIN_AUTH
+                          UPI_SETTLE
                         </td>
                       </tr>
                       <tr className="hover:bg-surface-container-low transition-colors">
-                        <td className="p-4 text-on-surface font-semibold">Statement Reflection</td>
-                        <td className="p-4 text-on-surface-variant">Varies by Bank</td>
+                        <td className="p-4 text-on-surface font-semibold">Gateway Arbitration</td>
+                        <td className="p-4 text-on-surface-variant">3 - 5 Business Days</td>
                         <td className="p-4 flex items-center gap-2 text-on-surface-variant">
                           <div className="w-2 h-2 rounded-full bg-outline shadow-none"></div>
-                          EXT_PROC
+                          GW_RESOLVE
                         </td>
                       </tr>
                     </tbody>
@@ -226,10 +226,10 @@ export default function RefundPage() {
                 <div className="relative z-10">
                   <div className="flex items-center gap-2 mb-6">
                     <span className="font-section-label text-section-label bg-white/10 text-primary-fixed px-2 py-1 rounded">SEC_04</span>
-                    <h2 className="font-headline-md text-2xl font-bold">Dispute Resolution</h2>
+                    <h2 className="font-headline-md text-2xl font-bold">Support &amp; Arbitration Desk</h2>
                   </div>
                   <p className="font-body-md mb-8 opacity-90 max-w-2xl leading-relaxed">
-                    In the event of a disagreement regarding refund eligibility for technical defects or shipping delays, FlexBook employs an Industrial Arbitration Protocol. We commit to a resolution within 10 business days of a formal dispute filing.
+                    In the event of a reconciliation discrepancy or gateway settlement failure, Flexo ERP maintains a dedicated B2B software support desk. We commit to a resolution within 48 business hours.
                   </p>
                   <a
                     href="mailto:ops@flexbooksystems.com"
