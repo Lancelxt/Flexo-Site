@@ -48,7 +48,7 @@ export default function PrivacyPage() {
               Privacy Policy &amp; Data Protection Protocol
             </h1>
             <p className="text-on-surface-variant font-body-lg max-w-3xl">
-              This document outlines the precision standards for data handling at Flexo ERP. We apply the same level of security to your multi-tenant database as we do to internal software workflows.
+              This document outlines the precision standards for data handling at Flexzy ERP. We apply the same level of security to your multi-tenant database as we do to internal software workflows.
             </p>
             <div className="flex flex-wrap items-center gap-4 mt-4">
               <div className="flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full">
@@ -182,7 +182,7 @@ export default function PrivacyPage() {
                 </div>
                 <div className="space-y-6">
                   <p className="font-body-lg text-on-surface-variant">
-                    Flexo ERP utilizes processed data to maintain the integrity of your multi-tenant workshop operations and client portals.
+                    Flexzy ERP utilizes processed data to maintain the integrity of your multi-tenant workshop operations and client portals.
                   </p>
                   <div className="overflow-x-auto border border-outline-variant rounded-lg">
                     <table className="w-full text-left border-collapse">

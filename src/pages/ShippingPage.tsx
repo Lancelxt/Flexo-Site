@@ -49,7 +49,7 @@ export default function ShippingPage() {
                 Digital Delivery &amp; SLA Policy
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-                Flexo ERP provides instant provisioning for B2B multi-tenant cloud workspaces. This document details our service level agreements, digital vector assets storage, and technical response times.
+                Flexzy ERP provides instant provisioning for B2B multi-tenant cloud workspaces. This document details our service level agreements, digital vector assets storage, and technical response times.
               </p>
             </div>
             
@@ -191,7 +191,7 @@ export default function ShippingPage() {
                   <div className="bg-surface-container-low p-6 rounded border border-outline-variant">
                     <span className="font-section-label text-section-label text-outline mb-3 block">CAD SECURITY DIRECTIVE</span>
                     <p className="font-technical-data text-technical-data italic text-on-surface-variant leading-relaxed">
-                      "Flexo ERP isolates client assets into multi-tenant buckets. High-fidelity prints, CAD paths, and customer job vector data are protected from adjacent account visibility."
+                      "Flexzy ERP isolates client assets into multi-tenant buckets. High-fidelity prints, CAD paths, and customer job vector data are protected from adjacent account visibility."
                     </p>
                   </div>
                 </div>
@@ -225,7 +225,7 @@ export default function ShippingPage() {
                     <h2 className="font-headline-md text-2xl font-bold">System Redundancy</h2>
                   </div>
                   <p className="font-body-md mb-8 opacity-90 max-w-2xl leading-relaxed">
-                    Flexo ERP operates redundant server instances across distinct geographical centers to guarantee maximum software availability. If database connection failures disrupt your workshop production floor, alert our team to activate immediate failovers.
+                    Flexzy ERP operates redundant server instances across distinct geographical centers to guarantee maximum software availability. If database connection failures disrupt your workshop production floor, alert our team to activate immediate failovers.
                   </p>
                   <a
                     href="mailto:ops@flexbooksystems.com"

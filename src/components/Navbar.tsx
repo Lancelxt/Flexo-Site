@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-2">
             <Link to="/" className="font-headline-lg text-headline-lg font-extrabold text-primary tracking-tight">
-              Flexo ERP
+              Flexzy ERP
             </Link>
             <span className="hidden sm:inline-block font-mono text-[10px] bg-primary/10 text-primary px-1.5 py-0.5 rounded font-medium">
               v2.4.0
@@ -79,7 +79,7 @@ export default function Navbar() {
 
           {/* Client Login Button */}
           <a
-            href="https://app.flexzy.in" // Update to live Flexo ERP app URL
+            href="https://app.flexzy.in" // Update to live Flexzy ERP app URL
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-block bg-primary-container text-on-primary-container px-6 py-2 rounded font-semibold text-body-md hover:opacity-90 active:scale-95 duration-100 action-glow text-center"

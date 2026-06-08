@@ -18,22 +18,22 @@ function TitleTracker() {
     // 1. Dynamic Title SEO Override
     switch (location.pathname) {
       case '/':
-        document.title = 'Flexo ERP | Signage & Print Shop Management Software | Print CRM';
+        document.title = 'Flexzy ERP | Signage & Print Shop Management Software | Print CRM';
         break;
       case '/privacy':
-        document.title = 'Privacy Policy | Data Security | Flexo ERP';
+        document.title = 'Privacy Policy | Data Security | Flexzy ERP';
         break;
       case '/terms':
-        document.title = 'Terms and Conditions | Software Licenses | Flexo ERP';
+        document.title = 'Terms and Conditions | Software Licenses | Flexzy ERP';
         break;
       case '/refund':
-        document.title = 'Cancellation & Refund Policy | Gateway Terms | Flexo ERP';
+        document.title = 'Cancellation & Refund Policy | Gateway Terms | Flexzy ERP';
         break;
       case '/shipping':
-        document.title = 'Digital Delivery & Service SLA Policy | Flexo ERP';
+        document.title = 'Digital Delivery & Service SLA Policy | Flexzy ERP';
         break;
       default:
-        document.title = 'Flexo ERP | Print Shop Management Software';
+        document.title = 'Flexzy ERP | Print Shop Management Software';
     }
 
     // 2. Dynamic Canonical URL Injection

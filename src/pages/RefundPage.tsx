@@ -49,7 +49,7 @@ export default function RefundPage() {
                 Cancellation &amp; Refund Policy
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-                At Flexo ERP, we prioritize precision and transparency. This policy outlines the procedural framework for SaaS subscription cancellations, software trial adjustments, and UPI gateway reconciliations to ensure professional uptime for all clients.
+                At Flexzy ERP, we prioritize precision and transparency. This policy outlines the procedural framework for SaaS subscription cancellations, software trial adjustments, and UPI gateway reconciliations to ensure professional uptime for all clients.
               </p>
             </div>
             
@@ -129,7 +129,7 @@ export default function RefundPage() {
                 </div>
                 <div className="space-y-4 font-body-md text-on-surface-variant leading-relaxed">
                   <p>
-                    Flexo ERP is provided on a multi-tenant cloud subscription basis. Tenants are provided a <span className="font-technical-data text-on-surface font-bold">14-Day Free Software Trial</span>. You may cancel your subscription trial or paid seats at any time via the billing console.
+                    Flexzy ERP is provided on a multi-tenant cloud subscription basis. Tenants are provided a <span className="font-technical-data text-on-surface font-bold">14-Day Free Software Trial</span>. You may cancel your subscription trial or paid seats at any time via the billing console.
                   </p>
                   <p>
                     Once a monthly billing period initiates, cancellations will apply to the subsequent monthly cycle, ensuring access for the remainder of the currently active paid interval.
@@ -166,7 +166,7 @@ export default function RefundPage() {
                   <div className="bg-surface-container-low p-6 rounded border border-outline-variant">
                     <span className="font-section-label text-section-label text-outline mb-3 block">COMPLIANCE NOTE</span>
                     <p className="font-technical-data text-technical-data italic text-on-surface-variant leading-relaxed">
-                      "Flexo ERP deep-links directly with merchant UPI gateways. We do not store or deduct transaction processing fees. All payment remittances settle directly from your client to your configured business bank account."
+                      "Flexzy ERP deep-links directly with merchant UPI gateways. We do not store or deduct transaction processing fees. All payment remittances settle directly from your client to your configured business bank account."
                     </p>
                   </div>
                 </div>
@@ -229,7 +229,7 @@ export default function RefundPage() {
                     <h2 className="font-headline-md text-2xl font-bold">Support &amp; Arbitration Desk</h2>
                   </div>
                   <p className="font-body-md mb-8 opacity-90 max-w-2xl leading-relaxed">
-                    In the event of a reconciliation discrepancy or gateway settlement failure, Flexo ERP maintains a dedicated B2B software support desk. We commit to a resolution within 48 business hours.
+                    In the event of a reconciliation discrepancy or gateway settlement failure, Flexzy ERP maintains a dedicated B2B software support desk. We commit to a resolution within 48 business hours.
                   </p>
                   <a
                     href="mailto:ops@flexbooksystems.com"

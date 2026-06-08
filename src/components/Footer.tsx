@@ -11,12 +11,12 @@ export default function Footer() {
       <footer className="w-full py-margin bg-surface-container border-t border-outline-variant mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter px-margin max-w-container-max mx-auto">
           <div className="flex flex-col gap-6">
-            <span className="font-headline-md text-headline-md font-bold text-on-surface">Flexo ERP</span>
+            <span className="font-headline-md text-headline-md font-bold text-on-surface">Flexzy ERP</span>
             <p className="font-body-md text-on-surface-variant max-w-md">
               The ultimate operating system for print manufacturers and signage companies. Connect sales leads, design approvals, QC checks, and automated WhatsApp billing.
             </p>
             <span className="font-technical-data text-technical-data text-on-surface-variant">
-              © 2026 Flexo ERP Systems. All rights reserved. Ambikapur.
+              © 2026 Flexzy ERP Systems. All rights reserved. Ambikapur.
             </span>
           </div>
           <div className="flex flex-col md:items-end justify-between gap-8">
@@ -56,13 +56,13 @@ export default function Footer() {
     <footer className="bg-inverse-surface text-inverse-on-surface py-16 mt-0">
       <div className="max-w-container-max mx-auto px-margin grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         <div className="space-y-6">
-          <div className="font-headline-md text-white mb-6 font-bold">Flexo ERP Systems</div>
+          <div className="font-headline-md text-white mb-6 font-bold">Flexzy ERP Systems</div>
           <p className="text-surface-variant max-w-sm">
-            Registered Name: Flexo ERP Systems Pvt. Ltd. <br />
+            Registered Name: Flexzy ERP Systems Pvt. Ltd. <br />
             Modernizing the global printing and signage manufacturing industry through unified cloud ERP automation.
           </p>
           <div className="font-body-md text-surface-variant pt-2">
-            © 2026 Flexo ERP Systems. All rights reserved. Ambikapur.
+            © 2026 Flexzy ERP Systems. All rights reserved. Ambikapur.
           </div>
         </div>
         <div className="grid grid-cols-2 gap-8 w-full">

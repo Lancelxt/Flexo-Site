@@ -106,7 +106,7 @@ export default function TermsPage() {
             <ScrollReveal>
               <section className="bg-surface-container-lowest p-8 rounded-lg float-shadow border border-outline-variant">
                 <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
-                  These Terms and Conditions govern your use of the Flexo ERP platform and services. By accessing our high-fidelity workshop software, creating digital job sheets, or uploading client design files, you agree to adhere to the technical and legal standards outlined herein.
+                  These Terms and Conditions govern your use of the Flexzy ERP platform and services. By accessing our high-fidelity workshop software, creating digital job sheets, or uploading client design files, you agree to adhere to the technical and legal standards outlined herein.
                 </p>
               </section>
             </ScrollReveal>
@@ -124,7 +124,7 @@ export default function TermsPage() {
                   </div>
                   <div className="p-8 space-y-4">
                     <p className="font-body-md text-body-md text-on-surface-variant">
-                      All software proprietary algorithms, database structures, UI dashboard designs, and version updates featured on Flexo ERP are the exclusive property of Flexo ERP. This includes but is not limited to:
+                      All software proprietary algorithms, database structures, UI dashboard designs, and version updates featured on Flexzy ERP are the exclusive property of Flexzy ERP. This includes but is not limited to:
                     </p>
                     <ul className="space-y-3 font-body-md text-on-surface">
                       <li className="flex gap-3">
@@ -166,7 +166,7 @@ export default function TermsPage() {
                   <div className="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg float-shadow">
                     <h3 className="font-technical-data font-bold text-primary mb-4 uppercase">Data Accuracy</h3>
                     <p className="font-body-md text-on-surface-variant mb-4">
-                      Estimators must provide exact technical dimensions. Flexo ERP is not liable for manufacturing errors arising from incorrect size configurations or substrate settings entered on the platform.
+                      Estimators must provide exact technical dimensions. Flexzy ERP is not liable for manufacturing errors arising from incorrect size configurations or substrate settings entered on the platform.
                     </p>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#4da6ff]"></div>
@@ -203,7 +203,7 @@ export default function TermsPage() {
                       </tr>
                       <tr className="hover:bg-surface-container-low transition-colors">
                         <td className="px-6 py-4 text-on-surface font-semibold">Data Breach</td>
-                        <td className="px-6 py-4 text-on-surface-variant">Flexo ERP enforces Supabase Row-Level Security (RLS) to isolate database schemas between tenants.</td>
+                        <td className="px-6 py-4 text-on-surface-variant">Flexzy ERP enforces Supabase Row-Level Security (RLS) to isolate database schemas between tenants.</td>
                       </tr>
                     </tbody>
                   </table>

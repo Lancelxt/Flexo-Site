@@ -125,7 +125,7 @@ export default function HomePage() {
               <h2 className="font-headline-lg text-3xl font-extrabold mt-2 text-on-surface">Print Shop Management Modules</h2>
             </div>
             <p className="font-body-md text-on-surface-variant max-w-md">
-              Flexo is engineered to organize your internal operations, eliminating data silos between your designers, production floor, and invoicing desk.
+              Flexzy is engineered to organize your internal operations, eliminating data silos between your designers, production floor, and invoicing desk.
             </p>
           </ScrollReveal>
 
@@ -228,7 +228,7 @@ export default function HomePage() {
               <span className="section-label">Platform Provisioning</span>
               <h2 className="font-headline-lg text-3xl font-extrabold mt-4 mb-6 text-on-surface">Scale Your Workshop</h2>
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">
-                Flexo standardizes internal operations for sign manufacturers and commercial printing companies. Configure your workshop in 3 simple phases.
+                Flexzy standardizes internal operations for sign manufacturers and commercial printing companies. Configure your workshop in 3 simple phases.
               </p>
               
               <div className="space-y-6">
@@ -375,7 +375,7 @@ export default function HomePage() {
                   <div className="flex gap-4 items-start">
                     <span className="material-symbols-outlined text-secondary-fixed-dim text-[24px]">location_on</span>
                     <div>
-                      <p className="font-bold">Flexo ERP Operations Center</p>
+                      <p className="font-bold">Flexzy ERP Operations Center</p>
                       <p className="text-primary-fixed/80">
                         Ambikapur,<br />
                         Chhattisgarh, 497001
